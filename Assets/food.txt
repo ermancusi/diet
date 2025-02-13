@@ -17,3 +17,4 @@ Corn Flakes,https://www.amazon.it/KelloggS-Corn-Flakes-Originali-Gr-375/dp/B00BP
 Aceto di Vino Bianco,https://www.prodottiselex.it/prodotto/8003100874283,0,0,0
 Riso Preboiled,https://www.risoscotti.it/articoli/riso-oro-classico/,7.4,1.7,75.8
 Riso Integrale,https://www.risoscotti.it/articoli/riso-integrale-10/,7,2.7,71.6
+Tonno Fresco,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/tonno/,21.5,8.1,0

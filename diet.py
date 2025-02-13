@@ -103,9 +103,9 @@ def read_json(file_path):
         return data
 
 
-listOfIngredients=import_food("Scripts\\Diet\\food.txt" )
+listOfIngredients=import_food("Assets\\food.txt" )
 
-diet = read_json("Scripts\\Diet\\diet_NO_Workout.json" )
+diet = read_json("Assets\\diet_NO_Workout.json" )
 days={} 
 
 for name in diet:
@@ -119,7 +119,7 @@ for name in diet:
         
     days[name]=Day(name, False, meals)
 
-print(days["Martedì"])
+print(days["Sabato"])
 
 
 
