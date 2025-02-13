@@ -1,0 +1,146 @@
+{
+"Lunedì": {
+  "Colazione": {
+    "Latte di Mucca Scremato": {
+      "Quantità": 300
+    }
+  }, 
+  "Pranzo": {
+    "Pasta": {
+      "Quantità": 145
+    },
+    "Cannellini Secchi": {
+      "Quantità": 90
+    },
+    "Tonno in Scatola al Naturale": {
+      "Quantità": 104
+    },
+    "Olio EVO": {
+      "Quantità": 15
+    } 
+  },
+  "Spuntino 2": {  
+    "Crackers Integrali": {
+      "Quantità": 50
+    },
+    "Yogurt Greco": {
+      "Quantità": 50
+    }
+  },
+  "Cena": {
+    "Pane Integrale": {
+      "Quantità": 130
+    },
+    "Petto di Pollo": {
+      "Quantità": 200
+    },
+    "Olio EVO": {
+      "Quantità": 15
+    },
+    "Insalata Iceberg": {
+      "Quantità": 100
+    },
+    "Aceto di Vino Bianco": {
+      "Quantità": 0
+    }
+  }
+}
+,
+"Martedì": {
+  "Colazione": {
+    "Latte di Mucca Scremato": {
+      "Quantità": 300
+    }
+  }, 
+  "Pranzo": {
+    "Pasta Integrale": {
+      "Quantità": 138
+    },
+    "Lenticchie": {
+      "Quantità": 65
+    },
+    "Petto di Pollo": {
+      "Quantità": 175
+    },
+    "Olio EVO": {
+      "Quantità": 14
+    } 
+  },
+  "Spuntino 2": {  
+    "Crackers Integrali": {
+      "Quantità": 50
+    },
+    "Yogurt Greco": {
+      "Quantità": 50
+    }
+  },
+  "Cena": {
+    "Pane Integrale": {
+      "Quantità": 180
+    },
+    "Merluzzo": {
+      "Quantità": 200
+    },
+    "Olio EVO": {
+      "Quantità": 14
+    },
+    "Insalata Iceberg": {
+      "Quantità": 100
+    },
+    "Aceto di Vino Bianco": {
+      "Quantità": 0
+    }
+  }
+}
+,
+"Domenica": {
+  "Colazione": {
+    "Latte di Mucca Scremato": {
+      "Quantità": 300
+    }
+  }, 
+  "Pranzo": {
+    "Pasta": {
+      "Quantità": 130
+    },
+    "Lenticchie": {
+      "Quantità": 40
+    },
+    "Carne di Vitello": {
+      "Quantità": 136
+    },
+    "Olio EVO": {
+      "Quantità": 0
+    },
+    "Aceto di Vino Bianco": {
+      "Quantità": 0
+    }
+  },
+  "Spuntino 2": {  
+    "Crackers Integrali": {
+      "Quantità": 50
+    },
+    "Yogurt Greco": {
+      "Quantità": 115
+    }
+  },
+  "Cena": {
+    "Pane Integrale": {
+      "Quantità": 135
+    },
+    "Tonno in scatola al naturale": {
+      "Quantità": 192
+    },
+    "Olio EVO": {
+      "Quantità": 1
+    },
+    "Insalata Iceberg": {
+      "Quantità": 100
+    },
+    "Aceto di Vino Bianco": {
+      "Quantità": 0
+    }
+  }
+}
+
+}
