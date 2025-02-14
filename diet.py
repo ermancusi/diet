@@ -83,6 +83,8 @@ def import_food(filename):
     food={}
     with open(filename, "r", encoding="utf-8") as file:        
         for line in file:            
+            if line.startswith("#"):
+                continue
             fields = line.strip().split(",") 
             if len(fields) >= 5:
                 name = fields[0]
@@ -107,7 +109,7 @@ listOfIngredients=import_food("Assets\\food.txt" )
 workout= read_json("Assets\\workout.json")
 rest= read_json("Assets\\rest.json")
 
-diet=rest
+diet=workout
 days={} 
 
 for name in diet:
@@ -121,7 +123,12 @@ for name in diet:
         
     days[name]=Day(name, False, meals)
 
-print(days["Domenica"])
+
+days_names=["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì","Sabato","Domenica"]
+
+for x in days_names:    
+    print(days[x])
+    print ("====================")
 
 
 

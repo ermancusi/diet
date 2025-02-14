@@ -1,343 +1,343 @@
 {
-"Lunedì": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta": {
-      "Quantità": 145
+  "Lunedì": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta": {
+        "Quantità": 200
+      },
+      "Cannellini Secchi": {
+        "Quantità": 73
+      },
+      "Tonno in Scatola al Naturale": {
+        "Quantità": 52
+      },
+      "Olio EVO": {
+        "Quantità": 22
+      } 
     },
-    "Cannellini Secchi": {
-      "Quantità": 90
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 54
+      }
     },
-    "Tonno in Scatola al Naturale": {
-      "Quantità": 104
-    },
-    "Olio EVO": {
-      "Quantità": 15
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 130
-    },
-    "Petto di Pollo": {
-      "Quantità": 200
-    },
-    "Olio EVO": {
-      "Quantità": 15
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
-    }
-  }
-}
-,
-
-
-"Martedì": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta Integrale": {
-      "Quantità": 138
-    },
-    "Lenticchie": {
-      "Quantità": 65
-    },
-    "Petto di Pollo": {
-      "Quantità": 175
-    },
-    "Olio EVO": {
-      "Quantità": 14
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 180
-    },
-    "Merluzzo": {
-      "Quantità": 163
-    },
-    "Olio EVO": {
-      "Quantità": 14
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Petto di Pollo": {
+        "Quantità": 190
+      },
+      "Olio EVO": {
+        "Quantità": 20
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
     }
   }
-}
-,
-
-
-"Mercoledì": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta": {
-      "Quantità": 125
+  ,
+  
+  
+  "Martedì": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta Integrale": {
+        "Quantità": 198
+      },
+      "Lenticchie": {
+        "Quantità": 100
+      },
+      "Petto di Pollo": {
+        "Quantità": 120
+      },
+      "Olio EVO": {
+        "Quantità": 20
+      } 
     },
-    "Cannellini Secchi": {
-      "Quantità": 90
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 50
+      }
     },
-    "Carne di Vitello": {
-      "Quantità": 180
-    },
-    "Olio EVO": {
-      "Quantità": 0
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 160
-    },
-    "Tonno Fresco": {
-      "Quantità": 170
-    },
-    "Olio EVO": {
-      "Quantità": 4
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
-    }
-  }
-}
-,
-
-
-"Giovedì": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta Integrale": {
-      "Quantità": 133
-    },
-    "Lenticchie": {
-      "Quantità": 80
-    },
-    "Salmone": {
-      "Quantità": 110
-    },
-    "Olio EVO": {
-      "Quantità": 7
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 170
-    },
-    "Petto di Pollo": {
-      "Quantità": 200
-    },
-    "Olio EVO": {
-      "Quantità": 8
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Merluzzo": {
+        "Quantità": 92
+      },
+      "Olio EVO": {
+        "Quantità": 20
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
     }
   }
-}
-,
-
-
-"Venerdì": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta": {
-      "Quantità": 130
+  ,
+  
+  
+  "Mercoledì": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta": {
+        "Quantità": 174
+      },
+      "Cannellini Secchi": {
+        "Quantità": 109
+      },
+      "Carne di Vitello": {
+        "Quantità": 144
+      },
+      "Olio EVO": {
+        "Quantità": 15
+      } 
     },
-    "Cannellini Secchi": {
-      "Quantità": 80
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 50
+      }
     },
-    "Tonno in Scatola al Naturale": {
-      "Quantità": 104
-    },
-    "Olio EVO": {
-      "Quantità": 11
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 75
-    },
-    "Yogurt Greco": {
-      "Quantità": 100
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 126
-    },
-    "Merluzzo": {
-      "Quantità": 250
-    },
-    "Olio EVO": {
-      "Quantità": 11
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
-    }
-  }
-}
-,
-
-
-"Sabato": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta Integrale": {
-      "Quantità": 140
-    },
-    "Lenticchie": {
-      "Quantità": 85
-    },
-    "Petto di Pollo": {
-      "Quantità": 164
-    },
-    "Olio EVO": {
-      "Quantità": 5
-    } 
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 155
-    },
-    "Salmone": {
-      "Quantità": 150
-    },
-    "Olio EVO": {
-      "Quantità": 5
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Platessa": {
+        "Quantità": 154
+      },
+      "Olio EVO": {
+        "Quantità": 15
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
     }
   }
-}
-,
-
-
-"Domenica": {
-  "Colazione": {
-    "Latte di Mucca Scremato": {
-      "Quantità": 300
-    }
-  }, 
-  "Pranzo": {
-    "Pasta": {
-      "Quantità": 133
+  ,
+  
+  
+  "Giovedì": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta Integrale": {
+        "Quantità": 200
+      },
+      "Lenticchie": {
+        "Quantità": 95
+      },
+      "Salmone": {
+        "Quantità": 110
+      },
+      "Olio EVO": {
+        "Quantità": 14
+      } 
     },
-    "Lenticchie": {
-      "Quantità": 90
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 50
+      }
     },
-    "Carne di Vitello": {
-      "Quantità": 170
-    },
-    "Olio EVO": {
-      "Quantità": 0
-    }  
-  },
-  "Spuntino 2": {  
-    "Crackers Integrali": {
-      "Quantità": 50
-    },
-    "Yogurt Greco": {
-      "Quantità": 50
-    }
-  },
-  "Cena": {
-    "Pane Integrale": {
-      "Quantità": 150
-    },
-    "Tonno Fresco": {
-      "Quantità": 160
-    },
-    "Olio EVO": {
-      "Quantità": 6
-    },
-    "Insalata Iceberg": {
-      "Quantità": 100
-    },
-    "Aceto di Vino Bianco": {
-      "Quantità": 0
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 199
+      },
+      "Petto di Pollo": {
+        "Quantità": 108
+      },
+      "Olio EVO": {
+        "Quantità": 13
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
     }
   }
-}
-
-}
+  ,
+  
+  
+  "Venerdì": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta": {
+        "Quantità": 181
+      },
+      "Cannellini Secchi": {
+        "Quantità": 98
+      },
+      "Tonno in Scatola al Naturale": {
+        "Quantità": 52
+      },
+      "Olio EVO": {
+        "Quantità": 22
+      } 
+    },
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 79
+      }
+    },
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Merluzzo": {
+        "Quantità": 220
+      },
+      "Olio EVO": {
+        "Quantità": 20
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
+    }
+  }
+  ,
+  
+  
+  "Sabato": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta Integrale": {
+        "Quantità": 200
+      },
+      "Lenticchie": {
+        "Quantità": 92
+      },
+      "Petto di Pollo": {
+        "Quantità": 100
+      },
+      "Olio EVO": {
+        "Quantità": 13
+      } 
+    },
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 60
+      }
+    },
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Salmone": {
+        "Quantità": 120
+      },
+      "Olio EVO": {
+        "Quantità": 12
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
+    }
+  }
+  ,
+  
+  
+  "Domenica": {
+    "Colazione": {
+      "Latte di Mucca Scremato": {
+        "Quantità": 300
+      }
+    }, 
+    "Pranzo": {
+      "Pasta": {
+        "Quantità": 191
+      },
+      "Lenticchie": {
+        "Quantità": 90
+      },
+      "Carne di Vitello": {
+        "Quantità": 150
+      },
+      "Olio EVO": {
+        "Quantità": 12
+      }  
+    },
+    "Spuntino 2": {  
+      "Crackers Integrali": {
+        "Quantità": 75
+      },
+      "Yogurt Greco Selex": {
+        "Quantità": 31
+      }
+    },
+    "Cena": {
+      "Pane Integrale": {
+        "Quantità": 200
+      },
+      "Tonno Fresco": {
+        "Quantità": 106
+      },
+      "Olio EVO": {
+        "Quantità": 12
+      },
+      "Insalata Iceberg": {
+        "Quantità": 100
+      },
+      "Aceto di Vino Bianco": {
+        "Quantità": 0
+      }
+    }
+  }
+  
+  }

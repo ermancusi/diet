@@ -1,3 +1,4 @@
+#Prodotto,Url,Proteine,Grassi,Carboidrati,CoefficienteEspansione
 Latte di Mucca Scremato,https://www.parmalat.it/zymil/prodotti/latte-a-lunga-conservazione-zymil/latte-zymil-uht-magro-digeribile,3.3,0.1,4.9
 Pasta,https://www.pasta-garofalo.com/it/prodotto/n-68-penne-zitoni-rigate/,14,1,70
 Pasta Integrale,https://www.spesaonline.unes.it/u2/Dispensa-salata/Pasta/Pasta-integrale/La-Molisana-integrale-20-Penne-Rigate-500-g/p/97824,15,2,65
@@ -11,7 +12,7 @@ Merluzzo,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crosta
 Salmone,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/salmone/,18.4,12,1
 Olio EVO,https://www.monini.com/it/benessere-nell-extravergine,0,92,0
 Insalata Iceberg,https://nonpesa.it/prodotto/selex-natura-chiama-cuori-di-iceberg-lavati-e-pronti-per-il-consumo-250-g,0.9,0.5,3
-Yogurt Greco,https://www.supermercatideco.it/product-detail/productidn/2022286/deco-yogurt-greco-bianco-10-500g,5.5,10,3.5
+Yogurt Greco Deco,https://www.supermercatideco.it/product-detail/productidn/2022286/deco-yogurt-greco-bianco-10-500g,5.5,10,3.5
 Crackers Integrali,https://www.mulinobianco.it/cracker-integrali,14,8,60.5
 Corn Flakes,https://www.amazon.it/KelloggS-Corn-Flakes-Originali-Gr-375/dp/B00BPANBTG,7,0.9,84
 Aceto di Vino Bianco,https://www.prodottiselex.it/prodotto/8003100874283,0,0,0
@@ -19,3 +20,4 @@ Riso Preboiled,https://www.risoscotti.it/articoli/riso-oro-classico/,7.4,1.7,75.
 Riso Integrale,https://www.risoscotti.it/articoli/riso-integrale-10/,7,2.7,71.6
 Tonno Fresco,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/tonno/,21.5,8.1,0
 Platessa,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/platessa/,16,1.7,0.8
+Yogurt Greco Selex,https://www.prodottiselex.it/prodotto/8003100001801,9,0,5
