@@ -1,24 +1,21 @@
 import json
-#from reportlab.lib import colors
-#from reportlab.lib.pagesizes import letter, landscape
-#from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph
-#from reportlab.lib.styles import getSampleStyleSheet
-#from prettytable import PrettyTable
 
 class Food:
-    def __init__(self, name: str, proteins: float, fat: float, carbs: float, url: str):
+    def __init__(self, name: str, proteins: float, fat: float, carbs: float, url: str, coeff: float):
         self.name = name
         self.proteins = proteins
         self.fat = fat
         self.carbs = carbs
         self.url = url
+        self.coeff = coeff
     
     def __str__(self):
         return (f"Food: {self.name}\n"
                 f"Proteins: {self.proteins}g\n"
                 f"Fat: {self.fat}g\n"
                 f"Carbohydrates: {self.carbs}g\n")
-                #f"More info: {self.url}")
+                #f"More info: {self.url}"
+
  
 class Day:
     def __init__(self, name: str, workout: bool, meals:dict):
@@ -48,22 +45,28 @@ class Meal:
         self.totalFat=0.0
         self.totalCarbs=0.0
         self.totalQuantity=0.0
+        self.totalWater=0.0
         self.meal=set()
    
     def conversion(self, x1,x2):
         return (round(x1/100*x2,2))
     
     def computeMeal(self):
-        s=""
+        s1=""
+        s2=""
         for k,v in self.ingredients.items():         
             ingredient=self.listOfIngredients[k]
             self.totalProteins+= self.conversion(v,ingredient.proteins) 
             self.totalFat+=self.conversion(v,ingredient.fat) 
             self.totalCarbs+=self.conversion(v,ingredient.carbs) 
-            self.totalQuantity+=v
+            self.totalQuantity+=v*ingredient.coeff
+            if ingredient.coeff>1:
+               self.totalWater+= v*(ingredient.coeff-1)
+            if ingredient.name=="Latte di Mucca Scremato":
+               self.totalWater+=v*0.9
             self.meal.add(ingredient)            
-            s+=f"{ingredient.name}, Quantità:{v}g, Proteine:{self.conversion(v,ingredient.proteins) }g, Grassi:{self.conversion(v,ingredient.fat) }g, Carboidrati:{self.conversion(v,ingredient.carbs)}g"
-            s+="\n"
+            s1=f"{ingredient.name}, Quantità:{v}g, Proteine:{self.conversion(v,ingredient.proteins) }g, Grassi:{self.conversion(v,ingredient.fat) }g, Carboidrati:{self.conversion(v,ingredient.carbs)}g"
+            
              
    
         self.totalProteins=round(self.totalProteins,2)
@@ -71,8 +74,8 @@ class Meal:
         self.totalCarbs=round(self.totalCarbs,2)
         self.totalQuantity=round(self.totalQuantity,2)
 
-        s+=f"Total Quantity:{self.totalQuantity}g, Total Proteins:{self.totalProteins}g, Total Fat:{self.totalFat}g, Total Carbs:{self.totalCarbs}g"
-        return(s)
+        s2=f"Total Quantity:{self.totalQuantity}g, Total Water Assumed:{round(self.totalWater,2)}, Total Proteins:{self.totalProteins}g, Total Fat:{self.totalFat}g, Total Carbs:{self.totalCarbs}g"
+        return(s1,s2, round(self.totalWater,2))
 
 
     def __str__(self):
@@ -86,14 +89,15 @@ def import_food(filename):
             if line.startswith("#"):
                 continue
             fields = line.strip().split(",") 
-            if len(fields) >= 5:
+            if len(fields) >= 6:
                 name = fields[0]
                 url = fields[1]
                 proteins = fields[2]
                 fat = fields[3]
                 carbs = fields[4]
+                coeff = fields[5]
                 
-                food[name]=Food(name, float(proteins), float(fat), float(carbs),url)                
+                food[name]=Food(name, float(proteins), float(fat), float(carbs),url, float(coeff))                
 
             else:                
                 print("Invalid line format:", line.strip())
@@ -126,9 +130,45 @@ for name in diet:
 
 days_names=["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì","Sabato","Domenica"]
 
-for x in days_names:    
-    print(days[x])
-    print ("====================")
+weight=66.7
+
+waterToAssume=round(0.03*weight,2)
+
+print(waterToAssume)
+
+print_flag=True
+
+if print_flag:
+    for x in days_names:    
+        day=days[x]
+        meals=day.meals
+        waterFromFood=0.0
+        print(day.name)
+        for k, v in meals.items():
+            s1,s2,totalWater=v.computeMeal()
+            waterFromFood+=totalWater
+            print(s2)
+        s=f"To drink from water: {round(waterToAssume-waterFromFood/1000,2)} L"  
+        print(s)
+        print("\n\n")    
+
+
+if not print_flag:
+    for x in days_names:    
+        day=days[x]
+        meals=day.meals
+        waterFromFood=0.0
+        print(day.name)
+        for k, v in meals.items():
+            s1,s2,totalWater=v.computeMeal()
+            waterFromFood+=totalWater
+            print(s1)
+        s=f"To drink from water: {round(waterToAssume-waterFromFood/1000,2)} L"  
+        print(s)
+        print("\n\n")   
+
+
+
 
 
 

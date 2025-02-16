@@ -1,23 +1,23 @@
 #Prodotto,Url,Proteine,Grassi,Carboidrati,CoefficienteEspansione
-Latte di Mucca Scremato,https://www.parmalat.it/zymil/prodotti/latte-a-lunga-conservazione-zymil/latte-zymil-uht-magro-digeribile,3.3,0.1,4.9
-Pasta,https://www.pasta-garofalo.com/it/prodotto/n-68-penne-zitoni-rigate/,14,1,70
-Pasta Integrale,https://www.spesaonline.unes.it/u2/Dispensa-salata/Pasta/Pasta-integrale/La-Molisana-integrale-20-Penne-Rigate-500-g/p/97824,15,2,65
-Pane Integrale,https://www.legumiselect.it/it/prodotti/fagioli-cannellini/,7.5,1.3,48
-Cannellini Secchi,https://www.legumiselect.it/it/prodotti/fagioli-cannellini/,23,1.6,46
-Lenticchie,https://www.legumiselect.it/it/prodotti/lenticchie-rosse/,28,0.8,45
-Petto di Pollo,https://www.projectinvictus.it/petto-di-pollo-calorie-e-valori-nutrizionali/,23.3,0.8,0
-Tonno in Scatola al Naturale,https://www.spesaonline.unes.it/u2/Dispensa-salata/Conserve-vegetali%2C-di-carne-e-di-pesce/Tonno-in-scatola/Rio-mare-Tonno-al-Naturale-3-x-80-g/p/99609,24,0.5,0
-Carne di Vitello,https://www.humanitas.it/enciclopedia/alimenti/carne-e-prodotti-di-origine-animale/carne-di-vitello/,19.35,6.77,0
-Merluzzo,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/merluzzo,17.81,0.67,0
-Salmone,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/salmone/,18.4,12,1
-Olio EVO,https://www.monini.com/it/benessere-nell-extravergine,0,92,0
-Insalata Iceberg,https://nonpesa.it/prodotto/selex-natura-chiama-cuori-di-iceberg-lavati-e-pronti-per-il-consumo-250-g,0.9,0.5,3
-Yogurt Greco Deco,https://www.supermercatideco.it/product-detail/productidn/2022286/deco-yogurt-greco-bianco-10-500g,5.5,10,3.5
-Crackers Integrali,https://www.mulinobianco.it/cracker-integrali,14,8,60.5
-Corn Flakes,https://www.amazon.it/KelloggS-Corn-Flakes-Originali-Gr-375/dp/B00BPANBTG,7,0.9,84
-Aceto di Vino Bianco,https://www.prodottiselex.it/prodotto/8003100874283,0,0,0
-Riso Preboiled,https://www.risoscotti.it/articoli/riso-oro-classico/,7.4,1.7,75.8
-Riso Integrale,https://www.risoscotti.it/articoli/riso-integrale-10/,7,2.7,71.6
-Tonno Fresco,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/tonno/,21.5,8.1,0
-Platessa,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/platessa/,16,1.7,0.8
-Yogurt Greco Selex,https://www.prodottiselex.it/prodotto/8003100001801,9,0,5
+Latte di Mucca Scremato,https://www.parmalat.it/zymil/prodotti/latte-a-lunga-conservazione-zymil/latte-zymil-uht-magro-digeribile,3.3,0.1,4.9,1
+Pasta,https://www.pasta-garofalo.com/it/prodotto/n-68-penne-zitoni-rigate/,14,1,70,1.7
+Pasta Integrale,https://www.spesaonline.unes.it/u2/Dispensa-salata/Pasta/Pasta-integrale/La-Molisana-integrale-20-Penne-Rigate-500-g/p/97824,15,2,65,1.7
+Pane Integrale,https://www.legumiselect.it/it/prodotti/fagioli-cannellini/,7.5,1.3,48,1
+Cannellini Secchi,https://www.legumiselect.it/it/prodotti/fagioli-cannellini/,23,1.6,46,2.925
+Lenticchie,https://www.legumiselect.it/it/prodotti/lenticchie-rosse/,28,0.8,45,2.7
+Petto di Pollo,https://www.projectinvictus.it/petto-di-pollo-calorie-e-valori-nutrizionali/,23.3,0.8,0,0.9
+Tonno in Scatola al Naturale,https://www.spesaonline.unes.it/u2/Dispensa-salata/Conserve-vegetali%2C-di-carne-e-di-pesce/Tonno-in-scatola/Rio-mare-Tonno-al-Naturale-3-x-80-g/p/99609,24,0.5,0,1
+Carne di Vitello,https://www.humanitas.it/enciclopedia/alimenti/carne-e-prodotti-di-origine-animale/carne-di-vitello/,19.35,6.77,0,0.65
+Merluzzo,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/merluzzo,17.81,0.67,0,0.85
+Salmone,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/salmone/,18.4,12,1,1
+Olio EVO,https://www.monini.com/it/benessere-nell-extravergine,0,92,0,1
+Insalata Iceberg,https://nonpesa.it/prodotto/selex-natura-chiama-cuori-di-iceberg-lavati-e-pronti-per-il-consumo-250-g,0.9,0.5,3,1
+Yogurt Greco Deco,https://www.supermercatideco.it/product-detail/productidn/2022286/deco-yogurt-greco-bianco-10-500g,5.5,10,3.5,1
+Crackers Integrali,https://www.mulinobianco.it/cracker-integrali,14,8,60.5,1
+Corn Flakes,https://www.amazon.it/KelloggS-Corn-Flakes-Originali-Gr-375/dp/B00BPANBTG,7,0.9,84,1
+Aceto di Vino Bianco,https://www.prodottiselex.it/prodotto/8003100874283,0,0,0,1
+Riso Preboiled,https://www.risoscotti.it/articoli/riso-oro-classico/,7.4,1.7,75.8,1
+Riso Integrale,https://www.risoscotti.it/articoli/riso-integrale-10/,7,2.7,71.6,1
+Tonno Fresco,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/tonno/,21.5,8.1,0,0.8
+Platessa,https://www.humanitas.it/enciclopedia/alimenti/pesci-molluschi-e-crostacei/platessa/,16,1.7,0.8,1
+Yogurt Greco Selex,https://www.prodottiselex.it/prodotto/8003100001801,9,0,5,1
