@@ -120,7 +120,7 @@ rest= read_json("Assets\\rest.json")
 
 days_names=["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"]
 
-diet=rest
+diet=workout
 
 is_rest = diet == rest 
 
