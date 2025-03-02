@@ -21,7 +21,7 @@ one_kg_in_Cal=7000               #1kg of mass= 7000 Cal
 monthly_muscles=0.8              #1 month = 0.8kg of muscles
 
 def compute_macro(tdee):
-    workout=[0,300] #Cal
+    workout=[0,400] #Cal
     for w in workout:
         daily_requirement=tdee+surplus+w        
        
