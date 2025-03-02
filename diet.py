@@ -136,7 +136,7 @@ waterToAssume=round(0.03*weight*1000,2)
 
 print(waterToAssume)
 
-print_flag=True
+print_flag=not True
 
 if print_flag:
     for x in days_names:    

@@ -1,80 +1,92 @@
 #https://youtu.be/AMWJgXgx-XM
 
-#https://tdeecalculator.net/result.php?s=metric&g=male&age=25&kg=65&cm=178&act=1.2&bf=20&f=1
+# [04/02/2025 - 02/03/2025] https://tdeecalculator.net/result.php?s=metric&age=25&g=male&cm=178&kg=67.3&act=1.2&bf=20&f=1
+# [03/02/2025 - xx/03/2025] https://tdeecalculator.net/result.php?s=metric&g=male&age=25&kg=65&cm=178&act=1.2&bf=20&f=1
 
-surplus=200     #Cal
-sedentary_maintenance=1792 #Cal
-weight=65          #kg
-height=178         #cm
-carbo_Cal=4        #1g carboidrati = 4Cal
-protein_Cal=4      #1g protein = 4Cal
-fat_Cal=9          #1g fat = 9Cal
+import math
 
-print ("Weight: ", weight, "kg")
-print ("Height: ", height, "cm")
-print ("TDEE with no fitness: ", sedentary_maintenance, "Cal")
+surplus =200                     #Cal
+estimated_rest_tdee=1946         #Cal
 
-print()
+weight=67.3                      #kg
+height=178                       #cm
 
-def compute_All(sedentary_maintenance=1792):
-    workout=[0,400] #Cal
+carbo_Cal=4                      #1g carboidrati = 4Cal
+protein_Cal=4                    #1g protein = 4Cal
+fat_Cal=9                        #1g fat = 9Cal
+
+protein_factor=2.2              
+fat_factor=(20)/100              #fats in the diet
+one_kg_in_Cal=7000               #1kg of mass= 7000 Cal
+monthly_muscles=0.8              #1 month = 0.8kg of muscles
+
+def compute_macro(tdee):
+    workout=[0,300] #Cal
     for w in workout:
-        daily_requirement=sedentary_maintenance+w+surplus
+        daily_requirement=tdee+surplus+w        
+       
+        # the following quantities are in grams
+        daily_protein=round(protein_factor*weight,2)  
         
-        protein_factor=2.2  #2 or 2.2 #32%
-        daily_protein=protein_factor*weight #g
+        daily_fat=round((fat_factor*daily_requirement)/fat_Cal,2)
          
-        fat_factor=(20)/100 #Body Fat Percentage #20%
-        daily_fat=(fat_factor*daily_requirement)/fat_Cal #g
-         
-        daily_carbo=(daily_requirement-(daily_protein*protein_Cal) - (daily_fat*fat_Cal))/carbo_Cal
-        #48% 
-        print("==========================================================")
-        if w !=0:
-            print ("Diet with", surplus, "Cal of surplus and with workout (",w,") Cal")
+        daily_carbo=round((daily_requirement-(daily_protein*protein_Cal) - (daily_fat*fat_Cal))/carbo_Cal,2)
+        
+
+        total_calories= (round((daily_protein+daily_carbo)*4+daily_fat*9,1)) #math.ceil(round((daily_protein+daily_carbo)*4+daily_fat*9,2))
+
+        if w==0:
+            print ("REST", end="===> ")
         else:
-            print ("Diet with", surplus, "Cal of surplus and without workout (",w,") Cal")
-        print()
-        print ("Dailiy Proteins: ", round(daily_protein,2), "g")
-        print ("Dailiy Fat: ", round(daily_fat,2), "g")
-        print ("Dailiy Carbo: ", round(daily_carbo,2), "g")
-        
-        print()
-        
-        print ("Proteins Percentage: ",round(daily_protein*protein_Cal/daily_requirement*100,2),"%")
-        print ("Fat Percentage: ",round(daily_fat*fat_Cal/daily_requirement*100,2),"%")
-        print ("Carbo Percentage: ",round(daily_carbo*carbo_Cal/daily_requirement*100,2),"%")
-        
-        print()
-        print("==========================================================")
-    
-    
-  
-compute_All(sedentary_maintenance=1792)
+            print("WORKOUT", end="===> ")
 
-#1kg=7700Cal
-theoric_monthly_kg=surplus*30/7700 #kg gained in a month
-print()
-print("Theoretic kg gained in a month: ", round(theoric_monthly_kg,2),"kg")
+        print("TDEE: {}, surplus: {}, workout: {}, Total Cal: {}".format(tdee, surplus, w, total_calories))
+         
+        print ("\nDailiy Proteins: ", daily_protein, "g")
+        print ("Dailiy Fat: ", daily_fat, "g")
+        print ("Dailiy Carbo: ", daily_carbo, "g")
+
+        
+                
+        #print ("\nProteins Percentage: ",round(daily_protein*protein_Cal/daily_requirement*100,2),"%")
+        #print ("Fat Percentage: ",round(daily_fat*fat_Cal/daily_requirement*100,2),"%")
+        #print ("Carbo Percentage: ",round(daily_carbo*carbo_Cal/daily_requirement*100,2),"%")
+               
+        if w==0:
+            print("\n==========================================================\n")
     
 
-real_monthly_kg=0.68
-print("Real kg gained in a month ",real_monthly_kg,"kg")
+def compute_new_TDEE(measured_weight, surplus, estimated_tdee, days_under_test):
+    new_estimated_rest_tdee=0
+    initial_weight=66.6
+    
+    expected_weight= round((initial_weight) + (surplus*days_under_test/one_kg_in_Cal) + (monthly_muscles/30*days_under_test),2)
+       
+    delta_weight=round(measured_weight-expected_weight,2)
+    
+    delta_calories_daily= (delta_weight*7000)/days_under_test
+         
+    new_estimated_rest_tdee=round(estimated_tdee-delta_calories_daily,2)
 
-delta=abs(real_monthly_kg-theoric_monthly_kg)
-new_sedentary_maintenance=0
+    
+    real_surplus= round((estimated_tdee+surplus) - new_estimated_rest_tdee,2)
+    real_kg_from_diet=real_surplus*days_under_test/7000
+    real_kg_gained= round(initial_weight + real_kg_from_diet + monthly_muscles/30*days_under_test,2)
 
-if (real_monthly_kg!=theoric_monthly_kg):
-    extra_calories=delta*7700/30
-    if (real_monthly_kg>theoric_monthly_kg):
-        real_surplus=surplus+extra_calories
-        print()
-        print("The real surplus is:", round(real_surplus,2),"Cal")
-        new_sedentary_maintenance=sedentary_maintenance-extra_calories
-        print("The real sedentary maintenance is: ", round(new_sedentary_maintenance,2),"Cal")
-    else:
-        real_surplus=surplus-extra_calories
-        print()
-        print("The real surplus is:", round(real_surplus,2),"Cal")
-        new_sedentary_maintenance=sedentary_maintenance+extra_calories
-        print("The real sedentary maintenance is: ", round(new_sedentary_maintenance,2),"Cal")
+    print("Expected kg gained in {} days: {} kg".format(days_under_test,expected_weight))    
+    print("Real kg gained in {} days: {} kg".format(days_under_test,measured_weight))
+
+    print("New Estimated Rest TDEE: {}".format(new_estimated_rest_tdee)) 
+
+    """
+    print("Real surplus in the test {}".format(real_surplus)) 
+    print("Real kg from the diet {}".format(real_kg_from_diet)) 
+    print("Real kg gained {}".format(real_kg_gained)) 
+    """
+    
+
+
+
+compute_macro(estimated_rest_tdee)
+
+#compute_new_TDEE(67.3, surplus, estimated_rest_tdee, 21)
