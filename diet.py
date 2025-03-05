@@ -1,11 +1,12 @@
 import json
 
 class Food:
-    def __init__(self, name: str, proteins: float, fat: float, carbs: float, url: str, coeff: float):
+    def __init__(self, name: str, proteins: float, fat: float, carbs: float, url: str, coeff: float, fibers: float):
         self.name = name
         self.proteins = proteins
         self.fat = fat
         self.carbs = carbs
+        self.fibers=fibers
         self.url = url
         self.coeff = coeff
     
@@ -44,6 +45,7 @@ class Meal:
         self.totalProteins=0.0
         self.totalFat=0.0
         self.totalCarbs=0.0
+        self.totalFibers=0.0
         self.totalQuantity=0.0
         self.totalWater=0.0
         self.meal=set()
@@ -59,6 +61,7 @@ class Meal:
             self.totalProteins+= self.conversion(v,ingredient.proteins) 
             self.totalFat+=self.conversion(v,ingredient.fat) 
             self.totalCarbs+=self.conversion(v,ingredient.carbs) 
+            self.totalFibers+=self.conversion(v,ingredient.fibers) 
             self.totalQuantity+=v*ingredient.coeff
             if ingredient.coeff>1:
                self.totalWater+= v*(ingredient.coeff-1)
@@ -73,8 +76,9 @@ class Meal:
         self.totalFat=round(self.totalFat,2)
         self.totalCarbs=round(self.totalCarbs,2)
         self.totalQuantity=round(self.totalQuantity,2)
+        self.totalFibers=round(self.totalFibers,2)
 
-        s2=f"Total Quantity:{self.totalQuantity}g, Total Water Assumed:{round(self.totalWater,2)}, Total Proteins:{self.totalProteins}g, Total Fat:{self.totalFat}g, Total Carbs:{self.totalCarbs}g"
+        s2=f"Total Quantity:{self.totalQuantity}g, Total Water Assumed:{round(self.totalWater,2)}, Total Proteins:{self.totalProteins}g, Total Fat:{self.totalFat}g, Total Carbs:{self.totalCarbs}g, Total Fibers:{self.totalFibers}"
         return(s1,s2, round(self.totalWater,2))
 
 
@@ -89,15 +93,16 @@ def import_food(filename):
             if line.startswith("#"):
                 continue
             fields = line.strip().split(",") 
-            if len(fields) >= 6:
+            if len(fields) >= 7:
                 name = fields[0]
                 url = fields[1]
                 proteins = fields[2]
                 fat = fields[3]
                 carbs = fields[4]
                 coeff = fields[5]
+                fibers = fields[6]
                 
-                food[name]=Food(name, float(proteins), float(fat), float(carbs),url, float(coeff))                
+                food[name]=Food(name, float(proteins), float(fat), float(carbs),url, float(coeff),float(fibers))                
 
             else:                
                 print("Invalid line format:", line.strip())
@@ -110,10 +115,10 @@ def read_json(file_path):
 
 
 listOfIngredients=import_food("Assets\\food.txt" )
-workout= read_json("Assets\\workout.json")
-rest= read_json("Assets\\rest.json")
+workout= read_json("Assets\\V2\\workout.json")
+rest= read_json("Assets\\V2\\rest.json")
 
-diet=rest
+diet=workout
 days={} 
 
 for name in diet:
@@ -130,13 +135,13 @@ for name in diet:
 
 days_names=["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì","Sabato","Domenica"]
 
-weight=66.7
+weight=67.4
 
 waterToAssume=round(0.03*weight*1000,2)
 
-print(waterToAssume)
 
-print_flag=not True
+
+print_flag= not True
 
 if print_flag:
     for x in days_names:    
@@ -147,7 +152,7 @@ if print_flag:
         for k, v in meals.items():
             s1,s2,totalWater=v.computeMeal()
             waterFromFood+=totalWater
-            print(s2)
+            print(s1)
         s=f"To drink from water: {round((waterToAssume-waterFromFood)/1000,2)} L"  
         print(s)
         print("\n\n")    
@@ -162,7 +167,7 @@ if not print_flag:
         for k, v in meals.items():
             s1,s2,totalWater=v.computeMeal()
             waterFromFood+=totalWater
-            print(s1)
+            print(s2)
         s=f"To drink from water: {round(waterToAssume-waterFromFood/1000,2)} L"  
         print(s)
         print("\n\n")   
