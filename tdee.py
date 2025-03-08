@@ -50,7 +50,7 @@ def compute_macro(tdee):
                 
         #print ("\nProteins Percentage: ",round(daily_protein*protein_Cal/daily_requirement*100,2),"%")
         #print ("Fat Percentage: ",round(daily_fat*fat_Cal/daily_requirement*100,2),"%")
-        #print ("Carbo Percentage: ",round(daily_carbo*carbo_Cal/daily_requirement*100,2),"%")
+        print ("Carbo Percentage: ",round(daily_carbo*carbo_Cal/daily_requirement*100,2),"%")
                
         if w==0:
             print("\n==========================================================\n")
